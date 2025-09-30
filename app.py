@@ -69,7 +69,7 @@ Here is the text to consider:
 
     try:
         # We use the latest Gemini model, as we learned older names can be deprecated
-        model = genai.GenerativeModel('gemini-1.5-pro-latest')
+        model = genai.GenerativeModel('gemini-2.5-pro')
         response = model.generate_content(prompt)
         return response.text.strip()
     except Exception as e:
